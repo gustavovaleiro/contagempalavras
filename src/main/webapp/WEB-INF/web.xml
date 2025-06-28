@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app>
+  <context-param>
+    <param-name>javax.faces.DEFAULT_CHARSET</param-name>
+    <param-value>UTF-8</param-value>
+  </context-param>
+  <context-param>
+    <param-name>javax.faces.FACELETS_ENCODING</param-name>
+    <param-value>UTF-8</param-value>
+  </context-param>
+  <display-name>Contagem de Palavras</display-name>
+
+  <servlet>
+    <servlet-name>FacesServlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FacesServlet</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
+
